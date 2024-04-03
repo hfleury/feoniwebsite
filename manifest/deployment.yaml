@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feoniwebsite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feoniwebsite
+  template:
+    metadata:
+      labels:
+        app: feoniwebsite
+    spec:
+      containers:
+        - name: feoniwebsite
+          image: hfcardoso/feoniwebsite:latest
+          ports:
+            - containerPort: 3000

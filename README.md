@@ -26,3 +26,15 @@ Delete minikube
 ```shell
 make minidelete
 ```
+
+Build React docker
+```shell
+make reactbuild
+```
+
+Run React docker
+```shell
+make reactrun
+```
+
+Access http://172.17.0.2:3000/ to see it.
